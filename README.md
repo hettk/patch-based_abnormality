@@ -1,0 +1,2 @@
+# local_exemplar-based_distance_from_control_variety
+MICCAI 2020 submission
