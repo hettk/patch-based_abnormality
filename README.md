@@ -15,7 +15,7 @@ Pipeline of the proposed method. First, HC from the dataset is separated into tw
 
 
 <p align="center"><img src="figures/pbd_illustration.png" width="600"><br>
-Illustration of patch-based abnormality maps for **Top** a healthy control subject and **Bottom** an HD patient with 40 CAG repeats. **From left to right**, 3 different time points are shown for each subject. The HD subject is in the pre-manifest stage for the first time points, but converts to clinical diagnosis by the third time point. **Blue** represents areas with a low abnormality score *a(x)*, whereas **Red** represents areas with high abnormality score *a(x)*. We note a progressive increase of abnormality near the basal ganglia during the course of the disease which is consistent with HD pathology, while the abnormality map for the HC subject remains stable.</p>
+  Illustration of patch-based abnormality maps for <b>Top</b> a healthy control subject and <b>Bottom</b> an HD patient with 40 CAG repeats. <b>From left to right</b>, 3 different time points are shown for each subject. The HD subject is in the pre-manifest stage for the first time points, but converts to clinical diagnosis by the third time point. <b>Blue</b> represents areas with a low abnormality score <i>a(x)</i>, whereas <b>Red</b> represents areas with high abnormality score <i>a(x)</i>. We note a progressive increase of abnormality near the basal ganglia during the course of the disease which is consistent with HD pathology, while the abnormality map for the HC subject remains stable.</p>
 
 ## Deep-learning classification
 <p align="center"><img src="figures/network.png" width="600"><br>
