@@ -1,4 +1,4 @@
-# Local Exemplar-based Distance From Control Variety
+# Patch-based abnormality
 
 
-MICCAI 2020 submission
+Implementation of MICCAI 2020 submission
