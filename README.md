@@ -4,11 +4,12 @@
 Implementation of MICCAI 2020, Hett et al. 2020
 
 ## Global pipeline
-![Illustration of pipeline(figures/pipeline.png)
+<img src="figures/pipeline.png" width="600">
 
 
 ## Patch-based abnormality index
-![Illustration of PBA](figures/pbd_illustration.png)
+<img src="figures/pbd_illustration.png" width="600">
 
 ## Deep-learning classification
-![Illustration of ResNet](figures/network.png)
+<img src="figures/network.png" width="600">
+
