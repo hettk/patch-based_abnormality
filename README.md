@@ -8,7 +8,7 @@ Implementation of MICCAI 2020, Hett et al. 2020
 
 <br>
 
-<p align="center"><img src="figures/pipeline.png" width="800"><br>
+<p align="center"><img src="figures/pipeline.png" width="600"><br>
 Pipeline of the proposed method. First, HC from the dataset is separated into two subset, the HC templates used to estimate the local abnormality, the second is the set of HC for the evaluation of our method. Once all MRIs are preprocessed, we estimate the local abnormality using the HC template library. Finally, a convolutional neural network with softmax is used to obtain final classification.</p>
 <br>
 
