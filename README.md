@@ -39,3 +39,9 @@ In order to model the spatial disease signature and perform the subject-level cl
 
 <p align="center"><img src="figures/network.png" width="600"><br>
 Illustration of the convolutional neural network architecture used to validate our work. The architecture consist of a combination of convolutional layer (Conv), batch normalization (BN), Skipped connection layer (Side), pooling layer (Pool), and fully connected layer (FC). A soft-max layer estimate the probability for each class.</p>
+
+
+## References
+[1] he2016deep
+[2] hettk
+[3] SNIPE
