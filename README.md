@@ -25,9 +25,9 @@ Pipeline of the proposed method. First, HC from the dataset is separated into tw
 
 Our method derives from the patch-based grading framework [1,2]. To address PBG's dependence on the two template libraries, we estimate the local differences from a single template library composed only of HC subjects (see Fig 2). The abnormality a(x) for each voxel x of the MRI under study, is defined as:
  
-<img src="http://www.sciweavers.org/tex2img.php?eq=a%28x%29%20%3D%20%5Cfrac%7B%5Csum_%7BT%20%5Cin%20K_x%7D%20%7C%7CS%28x%29%20-%20T%28y%29%7C%7C_2%5E2%7D%7B%5Csigma_%7BS%28x%29%7D%7D%0A&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt="a(x) = \frac{\sum_{T \in K_x} ||S(x) - T(y)||_2^2}{\sigma_{S(x)}}" width="236" height="51" />, (1)
+, (1)
 
-where <img src="http://www.sciweavers.org/tex2img.php?eq=%5Csigma_%7BS%28x%29%7D&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt="\sigma_{S(x)}" width="42" height="18" /> is standard deviation of intensities over the patch S(x), which normalizes the differences of signal intensity contained in each patch S(x). Similar to Eq. 1, K<sub>x</sub> is the set of closest patches provided by the PatchMatch algorithm.  This results in a low abnormality metric if the current patch is similar to age-matched control subjects, and in a high abnormality metric if the patch does not fit well within the distribution of age-matched control subjects. 
+where &sigma;<sub>S(x)</sub> is standard deviation of intensities over the patch S(x), which normalizes the differences of signal intensity contained in each patch S(x). Similar to Eq. 1, K<sub>x</sub> is the set of closest patches provided by the PatchMatch algorithm.  This results in a low abnormality metric if the current patch is similar to age-matched control subjects, and in a high abnormality metric if the patch does not fit well within the distribution of age-matched control subjects. 
 <br>
 
 <p align="center"><img src="figures/pbd_illustration.png" width="600"><br>
