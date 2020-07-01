@@ -27,7 +27,7 @@ Pipeline of the proposed method. First, HC from the dataset is separated into tw
  
 <p align="center"><img src="https://latex.codecogs.com/svg.latex?a(x)%20=%20\frac{\sum_{T\in%20K_x}%20||S(x)%20-%20T(y)||_2^2}{\sigma_{S(x)}}" align="center" border="0" alt="a(x) = \frac{\sum_{T\in K_x} ||S(x) - T(y)||_2^2}{\sigma_{S(x)}}"/></p>
 
-<p align="justify">where &sigma;<sub>S(x)</sub> is standard deviation of intensities over the patch S(x), which normalizes the differences of signal intensity contained in each patch S(x). K<sub>x</sub> is the set of closest patches provided by the PatchMatch algorithm [4].  This results in a low abnormality metric if the current patch is similar to age-matched control subjects, and in a high abnormality metric if the patch does not fit well within the distribution of age-matched control subjects. </p>
+<p align="justify">where &sigma;<sub>S(x)</sub> is standard deviation of intensities over the patch S(x), which normalizes the differences of signal intensity contained in each patch S(x). K<sub>x</sub> is the set of closest patches provided by the PatchMatch algorithm [3].  This results in a low abnormality metric if the current patch is similar to age-matched control subjects, and in a high abnormality metric if the patch does not fit well within the distribution of age-matched control subjects. </p>
 <br>
 
 <p align="center"><img src="figures/pbd_illustration.png" width="600"><br>
@@ -35,17 +35,17 @@ Pipeline of the proposed method. First, HC from the dataset is separated into tw
 
 ## Deep-learning classification
 
-<p align="justify">In order to model the spatial disease signature and perform the subject-level classification, we used a convolutional neural network (CNN) approach. In recent years, many different architectures have been proposed in the pattern recognition field. Among them, deep residual neural network (ResNet) has shown competitive performances [3]. This architecture is characterized by skipped connections of different blocks of layers (see Fig 3). ResNet has demonstrated a reduced training error compared to other networks with similar depth. Indeed, the residual mapping enables to reduce the training error, which is generally correlated with the network depth for classic stacked architectures. In addition, to address the problem of GPU memory limitation, we used a 3D patch approach. Thus, both networks have as input 8 channels that represent non-overlapping patches from the input data (i.e., T1w MRI or PBA maps).</p>
+<p align="justify">In order to model the spatial disease signature and perform the subject-level classification, we used a convolutional neural network (CNN) approach. In recent years, many different architectures have been proposed in the pattern recognition field. Among them, deep residual neural network (ResNet) has shown competitive performances [4]. This architecture is characterized by skipped connections of different blocks of layers (see Fig 3). ResNet has demonstrated a reduced training error compared to other networks with similar depth. Indeed, the residual mapping enables to reduce the training error, which is generally correlated with the network depth for classic stacked architectures. In addition, to address the problem of GPU memory limitation, we used a 3D patch approach. Thus, both networks have as input 8 channels that represent non-overlapping patches from the input data (i.e., T1w MRI or PBA maps).</p>
 
 <p align="center"><img src="figures/network.png" width="600"><br>
 Illustration of the convolutional neural network architecture used to validate our work. The architecture consist of a combination of convolutional layer (Conv), batch normalization (BN), Skipped connection layer (Side), pooling layer (Pool), and fully connected layer (FC). A soft-max layer estimate the probability for each class.</p>
 
 
 ## References
-[1] He, Kaiming, et al. "Deep residual learning for image recognition." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
+[1] Coupé, Pierrick, et al. "Simultaneous segmentation and grading of anatomical structures for patient's classification: application to Alzheimer's disease." NeuroImage 59.4 (2012): 3736-3747.
 
 [2] Hett, Kilian, et al. "Adaptive fusion of texture-based grading for Alzheimer's disease classification." Computerized Medical Imaging and Graphics 70 (2018): 8-16.
 
-[3] Coupé, Pierrick, et al. "Simultaneous segmentation and grading of anatomical structures for patient's classification: application to Alzheimer's disease." NeuroImage 59.4 (2012): 3736-3747.
+[3] Giraud, Rémi, et al. "An optimized patchmatch for multi-scale and multi-feature label fusion." NeuroImage 124 (2016): 770-782.
 
-[4] Giraud, Rémi, et al. "An optimized patchmatch for multi-scale and multi-feature label fusion." NeuroImage 124 (2016): 770-782.
+[4] He, Kaiming, et al. "Deep residual learning for image recognition." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
