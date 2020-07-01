@@ -24,9 +24,7 @@ Fig. 1 Pipeline of the proposed method. First, HC from the dataset is separated 
 ## Patch-based abnormality index
 
 <p align="justify">Our method derives from the patch-based grading framework [1,2]. To address PBG's dependence on the two template libraries, we estimate the local differences from a single template library composed only of HC subjects (see Fig 2). The abnormality a(x) for each voxel x of the MRI under study, is defined as:</p>
- 
 <p align="center"><img src="https://latex.codecogs.com/svg.latex?a(x)%20=%20\frac{\sum_{T\in%20K_x}%20||S(x)%20-%20T(y)||_2^2}{\sigma_{S(x)}}" align="center" border="0" alt="a(x) = \frac{\sum_{T\in K_x} ||S(x) - T(y)||_2^2}{\sigma_{S(x)}}"/></p>
-
 <p align="justify">where &sigma;<sub>S(x)</sub> is standard deviation of intensities over the patch S(x), which normalizes the differences of signal intensity contained in each patch S(x). K<sub>x</sub> is the set of closest patches provided by the PatchMatch algorithm [3].  This results in a low abnormality metric if the current patch is similar to age-matched control subjects, and in a high abnormality metric if the patch does not fit well within the distribution of age-matched control subjects. </p>
 <br>
 
