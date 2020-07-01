@@ -1,7 +1,7 @@
 # Patch-based abnormality
 
 
-Implementation of MICCAI 2020, Hett et al. 2020
+<p>Implementation of MICCAI 2020, Hett et al. 2020 (see accepted paper <a href="https://github.com/hettk/patch-based_abnormality/raw/master/Local_dissimilarity_helps_deep_learning_for_the_classification_of_Huntington_disease.pdf">here</a>)</p>
 
 
 ### Summary
