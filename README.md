@@ -6,9 +6,9 @@
 
 ### Summary
 - PatchBasedAbnormality
-    - main function : pba.m
+    - main function : process_pba.m
 - DeepLearningClassification
-    - train.py, test.py
+    - main scripts: train.py, test.py
 
 
 
