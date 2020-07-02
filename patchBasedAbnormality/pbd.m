@@ -1,4 +1,25 @@
-
+%
+%
+% pbd(mri, nn, nnd, mask, patch_radius):  Compute abnormality map using distance of most 
+%       similar patches extracted using PatchMatch algorithm (see Hett et
+%       al. MICCAI 2020)
+%
+% 
+% Agurments: 
+%   - mri : 3D image understudy 
+%   - nn  : 6d array describing localization of most similar patches (x,y,z,t,n,ijk)
+%   - nnf : 5d array describing intensity distances of most similar patches
+%   (x,y,z,t,n)
+%   - mask: Mask of the region of interest
+%   - patch_radius: size of the patch used to detect similarity  
+%
+%
+% Return:
+%   - dImap: abnormality map (patch distance in terms of intensity
+%   differences)
+%   - dSmap: mean spatial distance map of patches extracted using OPAL
+%
+% Author: Kilian Hett, kilianhett@vanderbilt.edu (Vanderbilt University) 
 
 
 function [dImap,dSmap] = pbd(mri, nn, nnd, mask, patch_radius)
@@ -26,8 +47,6 @@ for i=1:length(idx)
   dImap(x,y,z) = mean(sqrt(valI(1:end)));
   dSmap(x,y,z) = mean(sqrt(valS(1:end)));
 end
-
-%dImap(idx) = dImap(idx); % min(dImap(idx));
 
 end
 
