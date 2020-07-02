@@ -1,9 +1,6 @@
-%
-%
 % pbd(mri, nn, nnd, mask, patch_radius):  Compute abnormality map using distance of most 
 %       similar patches extracted using PatchMatch algorithm (see Hett et
 %       al. MICCAI 2020)
-%
 % 
 % Agurments: 
 %   - mri : 3D image understudy 
