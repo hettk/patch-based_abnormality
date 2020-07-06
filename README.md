@@ -2,8 +2,7 @@
 
 
 <p>Implementation of <b>Hett et al., MICCAI, 2020</b> (see accepted paper <a href="https://github.com/hettk/patch-based_abnormality/raw/master/Local_dissimilarity_helps_deep_learning_for_the_classification_of_Huntington_disease.pdf">here</a>)</p>
-<br>
-<p>Please cite: <i><u>Hett, Kilian, et al. "Patch-based abnormality maps for improved deep learning-based classification of Huntington's disease." International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2020.</u></i></p>
+<p><u>Please cite:</u> <i>Hett, Kilian, et al. "Patch-based abnormality maps for improved deep learning-based classification of Huntington's disease." International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2020.</i></p>
 
 ```
 @inproceedings{hett2020patch,
@@ -23,8 +22,7 @@
     
 ```matlab
 % [pbi,pbs] = process_pba(input, templates, options): Estimate
-% abnormality map given a control subject population (see Hett et al.
-% MICCAI 2020)
+% abnormality map given a control subject population
 % 
 % Arguments: 
 %   - input
