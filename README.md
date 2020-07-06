@@ -4,7 +4,7 @@
 <p>Implementation of <b>Hett et al., MICCAI, 2020</b> (see accepted paper <a href="https://github.com/hettk/patch-based_abnormality/raw/master/Local_dissimilarity_helps_deep_learning_for_the_classification_of_Huntington_disease.pdf">here</a>)</p>
 <br>
 <p>Please cite:</p>
-<p>Hett, Kilian, et al. "Graph of brain structures grading for early detection of Alzheimer’s disease." International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2018.</p>
+<p>Hett, Kilian, et al. "Patch-based abnormality maps for improved deep learning-based classification of Huntington's disease." International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2020.</p>
 
 ```
 @inproceedings{hett2029patch,
