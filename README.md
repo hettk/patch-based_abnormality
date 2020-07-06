@@ -7,7 +7,7 @@
 <p>Hett, Kilian, et al. "Patch-based abnormality maps for improved deep learning-based classification of Huntington's disease." International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2020.</p>
 
 ```
-@inproceedings{hett2029patch,
+@inproceedings{hett2020patch,
   title={Patch-based abnormality maps for improved deep learning-based classification of Huntington's disease},
   author={Hett, Kilian and Giraud, R\'emi and Johnson, Hans and Paulsen, Jane S. and Long, Jeffrey D.  and Oguz, Ipek and others},
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
