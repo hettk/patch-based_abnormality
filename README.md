@@ -27,7 +27,7 @@
 % abnormality map given a control subject population (see Hett et al.
 % MICCAI 2020)
 % 
-% Agurments: 
+% Arguments: 
 %   - input
 %       input.mri : path of the mri understudy
 %       input.mask: mask of the region of interest
