@@ -7,6 +7,35 @@
 ### Summary
 - PatchBasedAbnormality
     - main function : process_pba.m
+    
+```matlab
+% [pbi,pbs] = process_pba(input, templates, options): Estimate
+% abnormality map given a control subject population (see Hett et al.
+% MICCAI 2020)
+% 
+% Agurments: 
+%   - input
+%       input.mri : path of the mri understudy
+%       input.mask: mask of the region of interest
+%       input.age : age of the subject understudy at scan
+%   - templates
+%       templates.t1_path  : list of path of the template mri
+%       templates.mask_path: list of path of the template mask
+%       templates.ages     : Vector of ages of templates at scan
+%   - options 
+%       OPAL parameters (default)
+%       options.rss      = 8;    Size of the search area
+%       options.ni       = 5;    Number of iter max
+%       options.np       = 20;   Number of patch extracted
+%       options.pr       = 3;    Patch size
+%       options.hasmutex = 1;    Enable mutex 
+%
+% Return:
+%   - pbi: abnormality map (patch distance in terms of intensity
+%   differences)
+%   - pbs: mean spatial distance map of patches extracted using OPAL
+```
+    
 - DeepLearningClassification
     - main scripts: train.py, test.py
 
