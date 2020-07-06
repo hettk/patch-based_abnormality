@@ -5,7 +5,7 @@
 <br>
 <p>Please cite:</p>
 <p>Hett, Kilian, et al. "Graph of brain structures grading for early detection of Alzheimer’s disease." International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2018.</p>
-'''latex
+```latex
 @inproceedings{hett2029patch,
   title={Patch-based abnormality maps for improved deep learning-based classification of Huntington's disease},
   author={Hett, Kilian and Giraud, R\'emi and Johnson, Hans and Paulsen, Jane S. and Long, Jeffrey D.  and Oguz, Ipek and others},
@@ -13,7 +13,7 @@
   year={2020},
   organization={Springer}
 }
-'''
+```
 
 
 
