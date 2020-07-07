@@ -49,7 +49,27 @@
     
 - DeepLearningClassification
     - main scripts: train.py, test.py
+ 
+```python 
+# Learn model using training set
+python train.py <data list>.csv <demographic list>.csv <img_path> <mdl_path> <cvp fold>
+  
+# Evaluate model using testing set
+python test.py <data list>.csv <demographic list>.csv <img_path> <mdl_path> <cvp fold>
+```
 
+##### Create list 
+train.py and test.py used two kind of data list in csv format. The files must be organised as follow: \<cvp fold\>/\<list name\>.csv
+
+- \<data list\>.csv
+
+| Subject ID  | Visit ID | Img names |
+| ----------- | -------- | --------- |
+
+- \<demographic list\>.csv
+
+| Subject ID  | Visit ID | Group Label | CAG length | Age at scan | Sex of subject | CAP at entry |
+| ----------- | -------- | ----------- | ---------- | ----------- | -------------- | ------------ |
 
 
 ## Abstract
