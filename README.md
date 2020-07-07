@@ -59,7 +59,7 @@ python test.py <data list>.csv <demographic list>.csv <img_path> <mdl_path> <cvp
 ```
 
 ##### Create list 
-train.py and test.py used two kind of data list in csv format. The files must be organised as follow: \<cvp fold\>/\<list name\>.csv
+train.py and test.py used two kind of data list in csv format (using comma as a delimiter). The files must be organised as follow: \<cvp fold\>/\<list name\>.csv
 
 - \<data list\>.csv
 
